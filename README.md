@@ -142,7 +142,7 @@ Además, se maneja correctamente `@RequestBody` en los controladores para evitar
 ## ⚠️ Nota importante sobre el `.jar`
 
 > 🗃️ Debido a que el archivo `.jar` generado por Maven supera el límite de 25MB que GitHub permite para subir archivos directamente al repositorio (`/target`), **no está incluido dentro del repositorio como tal**.  
->  
+>  Por lo tanto se le incluye el .zip en la entrega
 > 🔽 Puedes compilarlo tú mismo siguiendo estos pasos:
 
 ### 🔧 Compilar el proyecto manualmente
@@ -179,6 +179,8 @@ http://localhost:8081/api/v1/comics/
 ## 🧠 Autor
 
 Alvarez Macias Eder
+
+Trujillo Maldonado Humberto
 
 ---
 
