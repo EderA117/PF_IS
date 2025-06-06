@@ -139,19 +139,13 @@ Además, se maneja correctamente `@RequestBody` en los controladores para evitar
 
 ---
 
-## 🐳 Ejecución con Docker (opcional)
+## 🐳 Ejecución con Docker 
 
-Puedes crear una imagen y ejecutarla:
+### 🔧 Construir y levantar los contenedores
 
 ```bash
-# Crear el .jar
-./mvnw clean package
-
-# Crear imagen Docker
-docker build -t comic-api .
-
-# Ejecutar
-docker run -p 8080:8080 comic-api
+docker-compose build
+docker-compose up
 ```
 
 ---
