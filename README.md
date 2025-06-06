@@ -148,6 +148,12 @@ docker-compose build
 docker-compose up
 ```
 
+## 🌐 URL de la API
+
+```
+http://localhost:8081/api/v1/comics/
+```
+
 ---
 
 ## 🧠 Autor
