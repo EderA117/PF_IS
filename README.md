@@ -139,13 +139,31 @@ Además, se maneja correctamente `@RequestBody` en los controladores para evitar
 
 ---
 
+## ⚠️ Nota importante sobre el `.jar`
+
+> 🗃️ Debido a que el archivo `.jar` generado por Maven supera el límite de 25MB que GitHub permite para subir archivos directamente al repositorio (`/target`), **no está incluido dentro del repositorio como tal**.  
+>  
+> 🔽 Puedes compilarlo tú mismo siguiendo estos pasos:
+
+### 🔧 Compilar el proyecto manualmente
+
+1. Asegúrate de tener instalado **Java 17+** y **Maven**.
+2. Clona este repositorio:
+
+```bash
+git clone https://github.com/EderA117/PF_IS.git
+cd comicsapi
+```bash
+docker-compose build
+docker-compose up
+```
+
 ## 🐳 Ejecución con Docker 
 
 ### 🔧 Construir y levantar los contenedores
 
 ```bash
-docker-compose build
-docker-compose up
+mvn clean package
 ```
 
 ## 🌐 URL de la API
