@@ -153,9 +153,10 @@ Además, se maneja correctamente `@RequestBody` en los controladores para evitar
 ```bash
 git clone https://github.com/EderA117/PF_IS.git
 cd comicsapi
+
 ```bash
-docker-compose build
-docker-compose up
+mvn clean package
+
 ```
 
 ## 🐳 Ejecución con Docker 
@@ -163,7 +164,8 @@ docker-compose up
 ### 🔧 Construir y levantar los contenedores
 
 ```bash
-mvn clean package
+docker-compose build
+docker-compose up
 ```
 
 ## 🌐 URL de la API
