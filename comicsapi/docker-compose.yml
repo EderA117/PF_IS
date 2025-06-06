@@ -1,0 +1,38 @@
+version: "3.9"
+services:
+  mysql:
+    image: mysql:8.0.35
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3307:3306"
+    networks:
+      - red-app
+    restart: always
+    environment:
+      MYSQL_DATABASE: iscc
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: root
+    volumes:
+      - mysql:/var/lib/mysql
+
+  spring:
+    build: .
+    container_name: comicsapi
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/iscc
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+    ports:
+      - "8081:8080"
+    networks:
+      - red-app
+
+volumes:
+  mysql:
+    driver: local
+
+networks:
+  red-app:
