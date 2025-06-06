@@ -154,7 +154,7 @@ Además, se maneja correctamente `@RequestBody` en los controladores para evitar
 git clone https://github.com/EderA117/PF_IS.git
 cd comicsapi
 
-```bash
+
 mvn clean package
 
 ```
