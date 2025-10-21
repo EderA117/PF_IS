@@ -135,7 +135,7 @@ private String titulo;
 private String imagen;
 ```
 
-Además, se maneja correctamente `@RequestBody` en los controladores para evitar errores 415 (Unsupported Media Type). Asegúrate de usar `Content-Type: application/json` en todas las peticiones POST, PUT y PATCH.
+Además, se maneja correctamente `@RequestBody` en los controladores para evitar errores 415 (Unsupported Media Type).
 
 ---
 
@@ -143,11 +143,11 @@ Además, se maneja correctamente `@RequestBody` en los controladores para evitar
 
 > 🗃️ Debido a que el archivo `.jar` generado por Maven supera el límite de 25MB que GitHub permite para subir archivos directamente al repositorio (`/target`), **no está incluido dentro del repositorio como tal**.  Por lo tanto se le incluye el .zip en la entrega
 >  
-> 🔽 Puedes compilarlo tú mismo siguiendo estos pasos:
+> 🔽 Puedes compilarlo siguiendo estos pasos:
 
 ### 🔧 Compilar el proyecto manualmente
 
-1. Asegúrate de tener instalado **Java 17+** y **Maven**.
+1. Asegúrate de tener **Java 17+** y **Maven**.
 2. Clona este repositorio:
 
 ```bash
